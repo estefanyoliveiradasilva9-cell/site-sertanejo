@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Duplas Sertanejas</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="p-4 bg-light shadow">
+    <nav class="container d-flex justify-content-between align-items-center">
+      <h1 class="fw-bold text-primary">🎵 Duplas Sertanejas</h1>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#historia">História</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+      <!-- Acessibilidade -->
+      <div id="acessibilidade" class="menu-acessibilidade">
+        <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">
+          Acessibilidade
+        </button>
+        <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+          <button id="aumentar-fonte" class="btn btn-primary fw-bold">A+</button>
+          <button id="diminuir-fonte" class="btn btn-primary fw-bold">A-</button>
+          <button id="alterna-contraste" class="btn btn-primary fw-bold"><i class="bi bi-shadows"></i></button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container my-5">
+
+    <!-- Início -->
+    <section id="inicio" class="text-center text-white p-5 rounded shadow inicio-fundo">
+      <h2 class="display-4 fw-bold">O mundo das Duplas Sertanejas</h2>
+      <p class="lead">Da tradição à modernidade, a música sertaneja encanta gerações.</p>
+      <a href="#historia" class="btn btn-lg btn-warning mt-3">Quero conhecer</a>
+    </section>
+
+    <!-- História -->
+    <section id="historia" class="my-5 d-flex flex-column flex-md-row align-items-center">
+      <div class="col-md-6 text-center mb-4 mb-md-0">
+        <i class="bi bi-music-note-beamed display-1 text-warning"></i>
+      </div>
+      <div class="col-md-6">
+        <h2 class="text-primary fw-bold">A história das duplas</h2>
+        <p>As duplas sertanejas surgiram no Brasil no início do século XX, representando a vida no campo,
+          o amor e a cultura popular. Ícones como <b>Tonica & Tinoco</b> abriram caminho para a evolução do estilo,
+          que hoje se divide em raiz e universitário.</p>
+      </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" class="py-5 bg-light rounded shadow">
+      <h2 class="text-center text-primary mb-4">Duplas de Destaque</h2>
+      <div class="row g-4">
+        <div class="col-md-4 text-center">
+          <div class="card p-3 shadow-sm">
+            <i class="bi bi-star-fill display-3 text-warning"></i>
+            <h5 class="mt-3">Zezé Di Camargo & Luciano</h5>
+            <p>Referência dos anos 90, responsáveis por eternos sucessos românticos.</p>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="card p-3 shadow-sm">
+            <i class="bi bi-star-fill display-3 text-warning"></i>
+            <h5 class="mt-3">Jorge & Mateus</h5>
+            <p>Um dos maiores nomes do sertanejo universitário, arrastam multidões.</p>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="card p-3 shadow-sm">
+            <i class="bi bi-star-fill display-3 text-warning"></i>
+            <h5 class="mt-3">Chitãozinho & Xororó</h5>
+            <p>Clássicos e pioneiros, com décadas de carreira marcando gerações.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="my-5">
+      <div class="container p-5 bg-light rounded-4 shadow">
+        <h2 class="mb-4 text-primary">Entre em contato</h2>
+        <form>
+          <div class="form-group mb-3">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
+              placeholder="Digite seu nome completo">
+          </div>
+          <div class="form-group mb-3">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
+              placeholder="Digite seu email">
+          </div>
+          <div class="form-group mb-3">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
+              placeholder="Escreva sua mensagem"></textarea>
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar mensagem</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-center p-3 bg-dark text-white">
+    <p class="mb-1">📱 Siga nossas redes:</p>
+    <i class="bi bi-whatsapp mx-2"></i>
+    <i class="bi bi-instagram mx-2"></i>
+    <i class="bi bi-tiktok mx-2"></i>
+    <p class="mt-3">Desenvolvido por Estefany • Projeto fictício sem fins comerciais</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
